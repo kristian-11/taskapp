@@ -1,5 +1,5 @@
 
-const { agregarTarea, completarTarea, contarTareas, editarTarea, eliminarTarea } = require('./tasks')
+const { agregarTarea, completarTarea, contarTareas, editarTarea, eliminarTarea, listarPorPrioridad } = require('./tasks')
 const { cargarTareas, guardarTareas } = require('./storage')
 
 const tareasCargadas = cargarTareas();
@@ -18,6 +18,10 @@ agregarTarea(
 );
 
 //eliminarTarea(tareasCargadas, "Subir la TaskApp a GitHub")
+
+const tareasPrioridadAlta = listarPorPrioridad(tareasCargadas).filter(t => t.prioridad === PRIORIDAD_ALTA)
+console.log("Tareas de prioridad alta:", tareasPrioridadAlta)
+
 
 completarTarea(tareasCargadas, "Crear diseño de la TaskApp")
 

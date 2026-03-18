@@ -51,6 +51,9 @@ function editarTarea(tareas, titulo, nuevosDatos) {
   return false;
 }
 
+function listarPorPrioridad(tareas) {
+  return tareas.sort((a, b) => a.prioridad - b.prioridad);
+}
 
 module.exports = {
   agregarTarea,
@@ -58,5 +61,6 @@ module.exports = {
   contarTareas,
   eliminarTarea,
   editarTarea,
+  listarPorPrioridad,
 };
-
+  
