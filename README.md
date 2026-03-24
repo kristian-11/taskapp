@@ -4,9 +4,10 @@
 Estoy creando un proyecto...
 
 ## Instalación y ejecución
-\`\`\`bash
+```
+bash
 node taskApp.js
-\`\`\`
+```
 
 ## Funciones de CRUD
 - agregarTarea
