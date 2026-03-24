@@ -1,9 +1,20 @@
-Task App proyecto de estudio
+# TaskApp
 
-Estoy creando un proyecto de estudio para aprender js y fundamentos, todo esto con un crud y motodologias modernas, paso a paso y con un crecimiento progresivo, con practicas de una empresa real.
+## Descripción
+Estoy creando un proyecto...
 
-instalacion y ejecución
+## Instalación y ejecución
+\`\`\`bash
+node taskApp.js
+\`\`\`
 
-funciones de CRUD  
-tambeind e contar, recorrer y leer toda la informacion de datos
+## Funciones de CRUD
+- agregarTarea
+- completarTarea
+...
+
+## Estructura del proyecto
+- `storage.js` → persistencia JSON
+- `tasks.js` → lógica de tareas
+- `taskApp.js` → flujo principal
 
