@@ -1,5 +1,5 @@
 
-const { agregarTarea, completarTarea, contarTareas, editarTarea, eliminarTarea, listarPorPrioridad } = require('./tasks')
+const { agregarTarea, completarTarea, contarTareas, editarTarea, eliminarTarea, listarPorPrioridad, contarPendientes } = require('./tasks')
 const { cargarTareas, guardarTareas } = require('./storage')
 
 const tareasCargadas = cargarTareas();
@@ -24,6 +24,9 @@ console.log("Tareas de prioridad alta:", tareasPrioridadAlta)
 
 
 completarTarea(tareasCargadas, "Crear diseño de la TaskApp")
+
+const pendientes = contarPendientes(tareasCargadas)
+console.log(`Tareas pendientes: ${pendientes}`)
 
 
 guardarTareas(tareasCargadas)

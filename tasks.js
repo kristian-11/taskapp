@@ -55,6 +55,10 @@ function listarPorPrioridad(tareas) {
   return tareas.sort((a, b) => a.prioridad - b.prioridad);
 }
 
+function contarPendientes(tareas) {
+  return tareas.filter(tarea => !tarea.completada).length;
+}
+
 module.exports = {
   agregarTarea,
   completarTarea,
@@ -62,5 +66,6 @@ module.exports = {
   eliminarTarea,
   editarTarea,
   listarPorPrioridad,
+  contarPendientes,
 };
   
